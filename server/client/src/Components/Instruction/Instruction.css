@@ -1,0 +1,32 @@
+.instruction {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+    animation: vibrate .3s infinite both;
+}
+
+.instruction.instruction-mobile {
+    display: none;
+    position: absolute;
+    top: auto;
+    bottom: 1%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: fit-content;
+    animation: slide-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both infinite;
+    -webkit-animation: slide-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both infinite;
+}
+
+@media screen and (max-width:500px) {
+    .instruction {
+        display: none;
+    }
+
+    .instruction.instruction-mobile {
+        display: block;
+    }
+}

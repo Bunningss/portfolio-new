@@ -1,0 +1,18 @@
+.branding {
+    position: fixed;
+    top: 20%;
+    right: 15%;
+    transition: all 1s ease;
+    font-weight: 600;
+}
+
+.branding:hover::after {
+    content: 'mahmud';
+}
+
+@media screen and (max-width: 500px) {
+    .branding {
+        top: 10%;
+        right: 15%;
+    }
+}

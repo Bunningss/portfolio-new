@@ -1,0 +1,10 @@
+.letter {
+    width: fit-content;
+}
+
+.letter.jump {
+    display: inline-block;
+    animation: jump 3s both;
+    color: var(--secondary-color);
+    opacity: .5;
+}

@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+    color: var(--font-color);
+    line-height: 160%;
+}
+
+:root {
+    --background-color: #000814;
+    --font-color: #fff;
+    --secondary-color: #e2ece9;
+}
+
+body {
+      font-size: 20px;
+      /* background: #000000;
+      background: -webkit-linear-gradient(to right, #262626, #000000);
+      background: linear-gradient(to right, #262626, #000000); */
+      -webkit-animation: color-change-2x 5s linear infinite alternate both;
+	    animation: color-change-2x 5s linear infinite alternate both;
+}
+
+a {
+  text-decoration: none;
+}
+
+.default {
+    padding-right: 5%;
+    padding-left: 5%;
+    min-height: 100vh;
+    animation: reveal 1s linear;
+}
+
+.section-default {
+  max-width: 1024px;
+  width: 100%;
+}
+
+.header {
+  font-size: 100px;
+  font-weight: 500;
+}
+
+.header-medium {
+  font-size: 70px;
+}
+
+.header-small {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.header-smaller {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.text-regular {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.text-small {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.animate {
+  animation: fade .6s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.section-margin {
+  margin: 0vh 0 30vh 0;
+}
+
+.section-margin:first-child {
+  margin-top: 35vh;
+}
+
+.section-gap {
+  margin: 20px 0;
+}
+
+.image-large {
+  height: 90vh;
+  width: 100vw;
+  object-fit: cover;
+  background-size: cover;
+  background-position: 55% 75%;
+  border-radius: 0% 10% 10% 14% / 0% 10% 10% 16% ;
+}
+
+.text-area {
+    padding-left: 15%;
+    display: block;
+    white-space: pre-wrap;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1440px) {
+  .text-regular {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    font-size: 65px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    font-size: 40px;
+  }
+
+  .header-medium {
+    font-size: 50px;
+  }
+
+  .text-area {
+    padding-left: 0;
+  }
+
+  .section-margin {
+    margin: 0vh 0 15vh 0;
+  }
+
+  .section-margin:first-child {
+    margin-top: 20vh;
+  }
+}
+
+/* Animations */
+
+@-webkit-keyframes jump {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(0.85, 1.15, 1);
+            transform: scale3d(0.85, 1.15, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes jump {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(0.85, 1.15, 1);
+            transform: scale3d(0.85, 1.15, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes fade {
+	0% {
+    opacity: 0;
+    transform: translateY(30vh);
+  }
+	100% {
+    opacity: 1;
+    transform: translateY(0);
+  }	
+}
+
+@-webkit-keyframes vibrate {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+@keyframes vibrate {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: #000;
+  }
+  100% {
+    background: #073b4c;
+  }
+}
+@keyframes color-change-2x {
+  0% {
+    background: #000;
+  }
+  100% {
+    background: #073b4c;
+  }
+}

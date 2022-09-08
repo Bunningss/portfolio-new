@@ -1,0 +1,24 @@
+.work {
+    display: flex;
+    justify-content: center;
+    background-color: #f9f9f9;
+    color: var(--background-color);
+    overflow: hidden;
+}
+
+.work .work-wrapper .letters .letter {
+    color: var(--background-color);
+}
+
+.work .work-wrapper .letters.section-margin {
+    margin-bottom: 0;
+}
+
+.work .work-wrapper .work-details {
+    color: var(--background-color);
+    text-transform: capitalize;
+}
+
+.work .work-wrapper .work-detailed {
+    color: var(--background-color);
+}

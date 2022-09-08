@@ -1,0 +1,32 @@
+.landing {
+    height: 100vh;
+}
+
+.landing .intro {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.landing .intro .col {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.landing .intro .col.col-2 {
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 500px) {
+    .landing .intro .col.col-1 {
+        display: none;
+    }
+
+    .landing .intro .col.col-2 {
+        align-items: flex-start;
+    }
+}
